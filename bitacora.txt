@@ -1,0 +1,22 @@
+Url completa: http://127.0.0.1:5501/index.html
+Host: 127.0.0.1:5501
+El metodo de la petición: get
+El código de estado: 404
+------------------------------------------------
+Código cuando no existe la página
+Cannot GET /promociones.html
+Significa que la petición no se pudo realizar porque no existe la página.
+------------------------------------------------
+Rol:
+HTML: El archivo html tiene el rol de estructurar la información en la página, con etiquetas que nos permite estructar desde
+lo más importante de primeras y más información de segunda. Por ejemplo: el h1 nos sirve unicamente para el uso del 
+titulo. La etiquete <p> nos permite escribir párrafos y la etiqueta h2 nos ayuda para escribir los subtitulos
+
+CSS: su rol es darle diseño y tamaño a cada etiqueta del archivo html. POr ejemplo: queremos darle un tamaño y estilo 
+a un botón, en el archivo html nos permite darle clases y con esa clase en Css nos permite darle estilo, por ejemplo: 
+.clase{
+    color: black;
+}
+
+JavaScript: su rol es darle acciones a cada botón y link que se encuentra en la página.
+
