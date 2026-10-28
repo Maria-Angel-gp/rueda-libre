@@ -19,4 +19,23 @@ a un botón, en el archivo html nos permite darle clases y con esa clase en Css 
 }
 
 JavaScript: su rol es darle acciones a cada botón y link que se encuentra en la página.
+|----------------------------------------------------------------------------------------------------------------------------|
+|campo_nombre | Documento | Email           | Celular   | Resultado                                                          |
+|----------------------------------------------------------------------------------------------------------------------------|
+| as          | 123456    | maria           |1234567892 | no deja enviar si el nombre no cumple al menos con tres caracteres.|
+|             |           |                 |           | el email debe tener la estructura de un correo                     |
+|             |           |                 |           | por último el número no deja ya que debe iniciar con un 3          |
+|----------------------------------------------------------------------------------------------------------------------------|
+| maria       | 123456    | maria@gmail.com |3000000000 | EL nombre cumple con lo requerido                                  |
+|             |           |                 |           | el email cumple la estructura de un correo                         |
+|             |           |                 |           | por último el número deja ya que inicia con un 3                   |
+|----------------------------------------------------------------------------------------------------------------------------|
 
+Auditoria:
+todo funciona correctamente.
+
+Mapa de uso de color:
+
+background color: #FAF6EF, white
+color: #14213D, #1E7A4F #F39A2B
+button: #14213D, white,
