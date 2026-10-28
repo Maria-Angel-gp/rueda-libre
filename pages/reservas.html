@@ -28,6 +28,55 @@
                 <li>Sábado, Domingos y Festivos: <strong>6:00 a.m - 2:00 p.m</strong></li>
             </ul>
         </section>
+        <section class="formulario_reservas">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text">
+                    <label for="documento">Número de documento: </label>
+                    <input type="number">
+                    <label for="email">Correo electronico: </label>
+                    <input type="email">
+                    <label for="celular">Celular: </label>
+                    <input type="tel">
+                </fieldset>
+                <fieldset>
+                    <legend>Tu alquiler</legend>
+                    <label for="fecha">Fecha de alquiler: </label>
+                    <input type="date">
+                    <label for="tipo_bicicleta">Tipo de bicicleta: </label>
+                    <input type="radio" id="urbana" value="urbana" name="bicicleta">
+                    <label for="urbana">Urbana</label>
+                    <input type="radio" id="montaña" value="montaña" name="bicicleta">
+                    <label for="montaña">Montaña</label>
+                    <input type="radio" id="electrica" value="electrica" name="bicicleta">
+                    <label for="electrica">Eléctrica</label>
+                    <label for="plan">Plan: </label>
+                    <input type="radio" id="1_hora" name="plan">
+                    <label for="1_hora">1 Hora</label>
+                    <input type="radio" id="medio_dia" name="plan">
+                    <label for="medio_dia">Medio Día</label>
+                    <input type="radio" name="plan" id="dia_completo">
+                    <label for="dia_completo">Día Completo</label>
+                    <label for="cantidad">Cantidad de bicicletas: </label>
+                    <input type="number">
+                    <label for="recorrido">Recorrido Guiado: </label>
+                    <input type="radio" name="guia" id="no_guia">
+                    <label for="no_guia">Ninguno</label>
+                    <input type="radio" name="guia" id="guia">
+                    <label for="guia">alguna de las tres rutas</label>
+                    <label for="comentarios">Comentarios: </label>
+                    <textarea name="comentarios" id="comentarios"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Confirmación</legend>
+                    <input type="checkbox" name="politicas">
+                    <label for="politicas">Aceptas las políticas de alquiler</label>
+                </fieldset>
+                <button type="submit" name="enviar">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <h2>Rueda Libre</h2>
