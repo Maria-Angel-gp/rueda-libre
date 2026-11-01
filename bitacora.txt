@@ -39,3 +39,13 @@ Mapa de uso de color:
 background color: #FAF6EF, white
 color: #14213D, #1E7A4F #F39A2B
 button: #14213D, white,
+
+Medición de modelo de caja en Tarjeta
+
+Resultados de la medición en DevTools (Computed):
+--------------------------------------------------
+1. Antes (box-sizing: content-box):
+   - Ancho contenido: 1125.6px
+   - Padding (izq/der): 40px + 40 px
+   - Borde (izq/der): 20 px + 20 px
+   = ANCHO TOTAL: 1245.6 px

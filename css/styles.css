@@ -1,14 +1,31 @@
+*{
+    margin: 0;
+}
+
 :root{
     --color-fondo: #FAF6EF;
     --color-boton-enlaces: #1E7A4F;
     --color-titulo: #14213D;
     --color-boton-secundary: #F39A2B;
     --color-texto-secundary: #5B6470;
-    --fuente-primary: "Open Sans", sans-serif;
-    --fuente-secundary: "Montserrat", sans-serif;
+    --fuente-primary: "Montserrat", sans-serif;
+    --grosor-primary: 700;
+    --fuente-secundary: "Open Sans", sans-serif;
+    --grosor-secundary: 400;
     --margin-principal: 2rem;
-    --padding: 3rem;
+    --padding: 2rem;
     --margin-top: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fuente-primary);
+    font-weight: var(--grosor-primary);
+    color: var(--color-boton-secundary);
+}
+
+p, ul, li, ol{
+    font-family: var(--fuente-secundary);
+    font-weight: var(--grosor-secundary);
 }
 
 body{
@@ -38,7 +55,7 @@ body{
     margin-top: 20px;
     background-color: #ffffffc0;
     transform: translateX(-10px);
-    color: var(--color-boton-enlaces);
+    color: var(--color-texto-secundary);
 }
 
 .navegacion .navegacion_principal nav:hover ul{
@@ -72,4 +89,174 @@ body{
 .navegacion .navegacion_principal nav a:hover{
     color: var(--color-boton-enlaces);
     text-decoration: underline var(--color-boton-enlaces);
+}
+
+.navegacion .navegacion_principal nav a:focus{
+    color: var(--color-boton-enlaces);
+    border: 1px solid var(--color-boton-enlaces);
+    text-decoration: underline var(--color-boton-enlaces);
+}
+
+.Titulo_principal{
+    display: flex;
+    margin: 20px 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Titulo_principal img{
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.informacion{
+    margin: 20px 20px;
+    text-align: justify;
+    padding: var(--padding);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.informacion img{
+    width: 60%;
+    border-radius: 20px;
+}
+
+.informacion .img_rutas{
+    display: flex;
+    justify-content: center;
+}
+
+
+.informacion img:hover{
+    box-shadow: 5px 10px 20px 8px rgba(37, 117, 252, 0.4);  
+}
+
+.informacion .img_regla{
+    display: flex;
+    justify-content: center;
+}
+
+.informacion2{
+    margin: 20px 20px;
+    text-align: justify;
+    padding: var(--padding);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion2 table{
+    border: 2px solid var(--color-titulo);
+    border-radius: 5px;
+    font-family: var(--fuente-secundary);
+}
+
+.informacion2 table caption{
+    border: 2px solid ;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #14213D;
+    color: var(--color-fondo);
+}
+
+.formulario_reservas{
+    margin: 20px 20px;
+    text-align: justify;
+    padding: var(--padding);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    color: var(--color-boton-enlaces);
+    background-color: #f4f6fab5;
+}
+
+.formulario_reservas .datos_personales{
+    margin: var(--margin-top);
+    border: 2px solid var(--color-boton-secundary);
+    font-family: var(--fuente-secundary);   
+    border-radius: 20px;
+}
+
+.formulario_reservas .datos_personales  input{
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: var(--margin-top);
+    background-color: #ffffff;
+    margin: 5px;
+
+}
+
+.formulario_reservas .datos_personales  input:focus{
+    outline: 2px solid var(--color-boton-secundary);
+}
+
+.formulario_reservas .datos_alquiler{
+    margin: var(--margin-top);
+    border: 2px solid var(--color-boton-secundary);
+    font-family: var(--fuente-secundary);       
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario_reservas .datos_alquiler div{
+    margin-bottom: var(--margin-top);
+}
+
+.formulario_reservas .datos_alquiler input{
+    color: var(--color-boton-secundary);
+    outline: var(--color-boton-secundary);
+    cursor: pointer;
+}
+
+.formulario_reservas button{
+    height: 50px;
+    border: none;
+    background-color: var(--color-boton-secundary);
+    color: var(--color-fondo);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+
+.formulario_reservas button:hover{
+    background-color: var(--color-fondo);
+    border: 2px solid var(--color-boton-secundary);
+    color: var(--color-boton-secundary);
+}
+
+.politicas{
+    margin: var(--margin-top);
+    border: 2px solid var(--color-boton-secundary);
+    font-family: var(--fuente-secundary);       
+    border-radius: 20px;
+}
+
+.politicas input{
+    cursor: pointer;
+}
+
+.pie_pagina{
+    margin: 20px 20px;
+    text-align: justify;
+    padding: var(--padding);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.pie_pagina img{
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
 }
