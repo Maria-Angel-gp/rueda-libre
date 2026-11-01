@@ -260,3 +260,43 @@ body{
     width: 80px;
     border-radius: 80px;
 }
+
+.tarjeta-servicio {
+    position: relative; 
+  /* Tus estilos actuales de la tarjeta (width, border, etc.) van aquí */
+}
+
+/* 2. Estilos para la etiqueta flotante */
+.etiqueta-nueva{
+    position: absolute;
+    top: 1px;       /* Distancia desde el borde superior */
+    right: 5px;     /* Distancia desde el borde derecho */
+    background-color: var(--color-boton-secundary); /* Color rojo llamativo o el color de tu marca */
+    color: #ffffff;   /* Color del texto */
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 20;     /* Asegura que quede por encima de la imagen o fondo */
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;       
+    right: 20px;        
+    padding: 12px 20px;
+    background-color: #25d366; 
+    color: #ffffff;     
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    z-index: 1000;      
+    transition: background-color 0.3s ease; 
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e; 
+}
