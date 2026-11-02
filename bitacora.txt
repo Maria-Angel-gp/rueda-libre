@@ -49,3 +49,7 @@ Resultados de la medición en DevTools (Computed):
    - Padding (izq/der): 40px + 40 px
    - Borde (izq/der): 20 px + 20 px
    = ANCHO TOTAL: 1245.6 px
+
+--------------------------------------------------
+el menu y el pie al ponerle la etiqueta, al ponerle un tamaño de dispositivo se van acomodando por columna
+

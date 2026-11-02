@@ -41,7 +41,8 @@ body{
     margin: 0px 20px;
     padding: 0px 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-wrap: wrap;
 }
 
 .navegacion .navegacion_principal nav:hover{
@@ -253,6 +254,7 @@ body{
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .pie_pagina img{
@@ -299,4 +301,62 @@ body{
 
 .btn-whatsapp:hover {
     background-color: #128c7e; 
+}
+
+.nuestra_flota{
+    margin: 20px 20px;
+    text-align: justify;
+    padding: var(--padding);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flota{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin-top);
+    text-align: center;
+    
+}
+
+.nuestra_flota .flota img{
+    width: 100% ;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.374); 
+    margin-bottom: 10px;
+}
+
+.flota article{
+    border: 2px solid var(--color-titulo);
+    height: 500px;
+    border-radius: 20px;
+    width: 350px;
+    background-color: var(--color-titulo);
+    color: white;
+    align-items: center;
+}
+
+.flota article button a{
+    text-decoration: none;
+    color: var(--color-boton-secundary);
+}
+
+.flota article button a:hover{
+    color: var(--color-boton-enlaces);
+}
+
+.flota article button{
+    background-color: var(--color-fondo);
+    border: none;
+    height: 50px;
+    margin-top: var(--margin-top);
+    border-radius: 10px;
+    cursor: pointer;
 }
