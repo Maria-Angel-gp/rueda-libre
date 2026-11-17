@@ -66,3 +66,27 @@ organización con grid
 Problema responsive resuelto 
 
 --------------------------------------------------
+ Trabajo con Bootstrap ---------------------------
+ -------------------------------------------------
+ El tiempo tomado fue 7 minutos
+
+ CSS propio: total de lineas es de 77 líneas del CSS de la flota 
+ Bootstrap: 0
+
+ sistema de cuadricula- anteriormente: CSS grid
+ sistema de cuadricula- Ahora: Bootstrap grid
+
+ distribución-anteriormente: Reglas personalizadas 
+ distribución-Ahora: Clases predefinidas 
+ -------------------------------------------------
+ Clases
+
+row-cols-lg-4: establece cuatro columnas en pantallas grandes.
+
+h-100: hace que las tarjetas ocupen el 100 % de la altura disponible.
+
+d-none d-md-block: oculta un elemento en celulares y lo muestra desde tablet.
+
+flex-column flex-md-row: organiza los elementos en columna en celulares y en fila desde tablet.
+
+justify-content-between: distribuye los elementos dejando espacio entre ellos.

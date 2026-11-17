@@ -1,7 +1,8 @@
-*{
-    margin: 0;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-
 :root{
     --color-fondo: #FAF6EF;
     --color-boton-enlaces: #1E7A4F;
@@ -17,13 +18,12 @@
     --margin-top: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-primary);
     font-weight: var(--grosor-primary);
-    color: var(--color-boton-secundary);
 }
 
-p, ul, li, ol{
+p, ul, li, ol {
     font-family: var(--fuente-secundary);
     font-weight: var(--grosor-secundary);
 }
@@ -155,6 +155,7 @@ img {
 .datos_personales .campo-completo {
     grid-column: 1 / -1;
 }
+
 
 
 .informacion2 {
