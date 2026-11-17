@@ -57,3 +57,12 @@ el menu y el pie al ponerle la etiqueta, al ponerle un tamaño de dispositivo se
 
 Con el modelo dispositivo de DevTools en tamaño de 1280px se puede apreciar una fila de 4 columnas y otra fila de 3 columnas
 y en tamaño 900px se aprecia tres columnas por fila y en tamaño 500 se puede ver solo una columna
+
+--------------------------------------------------
+organización con grid 
+
+--------------------------------------------------
+
+Problema responsive resuelto 
+
+--------------------------------------------------

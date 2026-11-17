@@ -32,85 +32,67 @@ body{
     background-color: var(--color-fondo);
 }
 
-.navegacion{
-    height: 100px;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.navegacion {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: auto;
+    margin: 10px;
+    padding: 15px;
     background-color: #ffffff86;
-    margin: 0px 20px;
-    padding: 0px 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.navegacion .navegacion_principal nav:hover{
-    cursor: pointer;
-}
-
-.navegacion .navegacion_principal nav ul{
-    display: none;
-    position: absolute;
-    width: 200px;
-    margin-top: 20px;
-    background-color: #ffffffc0;
-    transform: translateX(-10px);
-    color: var(--color-texto-secundary);
-}
-
-.navegacion .navegacion_principal nav:hover ul{
-    display: block;
-    height: 200px;
-}
-
-.navegacion .navegacion_principal nav ul li{
-    width: 200px;
-}
-
-.navegacion .logo{
+.navegacion .logo {
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
+    gap: 8px;
 }
 
-.navegacion .logo img{
-    height: 75px;
+.navegacion .logo img {
     width: 75px;
-    border-radius: 80px;
-    margin-right: 1rem;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.navegacion_principal{
-    position: absolute;
-    margin-left: 400px;
-
+.navegacion_principal {
+    position: static;
+    margin: 0;
+    width: 100%;
 }
 
-.navegacion .navegacion_principal nav a{ 
+.navegacion_principal nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.navegacion .navegacion_principal nav a {
     text-decoration: none;
     color: var(--color-titulo);
     font-family: var(--fuente-primary);
-    margin: 0 20px;
-    flex-wrap: wrap;
+    text-align: center;
+    margin: 0;
 }
 
-.navegacion .navegacion_principal nav a:hover{
-    color: var(--color-boton-enlaces);
-    text-decoration: underline var(--color-boton-enlaces);
-}
-
-.navegacion .navegacion_principal nav a:focus{
-    color: var(--color-boton-enlaces);
-    border: 1px solid var(--color-boton-enlaces);
-    text-decoration: underline var(--color-boton-enlaces);
-}
 
 .Titulo_principal {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 15px;
     align-items: center;
 }
 
@@ -121,8 +103,209 @@ body{
 .Titulo_principal .img_fondo img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.texto_portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+
+.galeria_rutas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.reservas_contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 15px;
+    align-items: start;
+}
+
+.reservas_contenedor .formulario_reservas,
+.reservas_contenedor .reservas_contacto {
+    margin: 0;
+    min-width: 0;
+}
+
+
+.formulario_reservas .datos_personales {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.datos_personales .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.datos_personales .campo-completo {
+    grid-column: 1 / -1;
+}
+
+
+.informacion2 {
+    margin: 15px;
+    padding: 15px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.informacion2 table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    font-family: var(--fuente-secundary);
+}
+
+.informacion2 th,
+.informacion2 td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+.flota {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.flota article {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pie_pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.formulario_reservas .datos_alquiler {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.formulario_reservas .datos_alquiler div {
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.formulario_reservas .datos_alquiler input {
+    max-width: 100%;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 25px;
+    }
+
+    .navegacion .logo {
+        flex-direction: row;
+    }
+
+    .navegacion_principal {
+        width: auto;
+    }
+
+    .navegacion_principal nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    .Titulo_principal {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .galeria_rutas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reservas_contenedor {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .formulario_reservas .datos_personales {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flota {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pie_pagina {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+
+    .galeria_rutas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .flota {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .Titulo_principal {
+        gap: 40px;
+        margin: 20px;
+    }
+
+    .texto_portada {
+        padding: 20px;
+    }
+
+    .navegacion_principal nav {
+        gap: 20px;
+    }
+
+}
+
+
 
 .texto_portada {
     display: flex;
@@ -313,25 +496,22 @@ body{
     border-radius: 80px;
 }
 
-.tarjeta-servicio {
-    position: relative; 
-  /* Tus estilos actuales de la tarjeta (width, border, etc.) van aquí */
+.tarjeta-servicio td:first-child {
+    position: relative;
 }
 
-/* 2. Estilos para la etiqueta flotante */
-.etiqueta-nueva{
+.etiqueta-nueva {
     position: absolute;
-    top: 1px;       /* Distancia desde el borde superior */
-    right: 5px;     /* Distancia desde el borde derecho */
-    background-color: var(--color-boton-secundary); /* Color rojo llamativo o el color de tu marca */
-    color: #ffffff;   /* Color del texto */
+    top: 1px;
+    right: 5px;
+    background-color: var(--color-boton-secundary);
+    color: #ffffff;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 6px 12px;
-    border-radius: 4px; /* Bordes ligeramente redondeados */
+    border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 20;     /* Asegura que quede por encima de la imagen o fondo */
 }
 
 .btn-whatsapp {
@@ -462,12 +642,6 @@ body{
     color: var(--color-texto-secundary);
 }
 
-.galeria_rutas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 20px;
-}
 
 .tarjeta_ruta {
     display: flex;
@@ -497,47 +671,7 @@ body{
 }
 
 
-@media (max-width: 800px) {
-    .galeria_rutas {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-}
-
-@media (max-width: 550px) {
-    .galeria_rutas {
-        grid-template-columns: 1fr;
-    }
-    .Titulo_principal {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-.reservas_contenedor {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    margin: 20px;
-    align-items: start;
-}
-
-
-.reservas_contenedor .formulario_reservas {
-    margin: 0;
-    min-width: 0;
-}
-
-.reservas_contenedor .reservas_contacto {
-    margin: 0;
-    min-width: 0;
-}
-
-@media (max-width: 800px) {
-    .reservas_contenedor {
-        grid-template-columns: 1fr;
-    }
-}
 
 .formulario_reservas .datos_personales {
     display: grid;
