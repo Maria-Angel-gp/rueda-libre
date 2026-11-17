@@ -68,10 +68,17 @@ body{
     width: 200px;
 }
 
+.navegacion .logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
 .navegacion .logo img{
     height: 75px;
     width: 75px;
     border-radius: 80px;
+    margin-right: 1rem;
 }
 
 .navegacion_principal{
@@ -85,6 +92,7 @@ body{
     color: var(--color-titulo);
     font-family: var(--fuente-primary);
     margin: 0 20px;
+    flex-wrap: wrap;
 }
 
 .navegacion .navegacion_principal nav a:hover{
@@ -98,18 +106,60 @@ body{
     text-decoration: underline var(--color-boton-enlaces);
 }
 
-.Titulo_principal{
-    display: flex;
-    margin: 20px 20px;
-    justify-content: center;
-    flex-direction: column;
+.Titulo_principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 20px;
     align-items: center;
 }
 
-.Titulo_principal img{
-    border-radius: 20px;
+.Titulo_principal .img_fondo {
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Titulo_principal .img_fondo img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.texto_portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.texto_portada h1 {
+    color: var(--color-titulo);
+    font-size: 2.5rem;
+}
+
+.texto_portada h2 {
+    color: var(--color-boton-secundary);
+}
+
+.texto_portada p {
+    color: var(--color-texto-secundary);
+    line-height: 1.6;
+}
+
+
+.btn-portada {
+    background-color: var(--color-boton-enlaces);
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.btn-portada:hover {
+    background-color: var(--color-boton-secundary);
 }
 
 .informacion{
@@ -303,60 +353,234 @@ body{
     background-color: #128c7e; 
 }
 
-.nuestra_flota{
-    margin: 20px 20px;
-    text-align: justify;
-    padding: var(--padding);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.nuestra_flota {
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
+    padding: var(--padding);
+}
+
+.flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: var(--margin-top);
+}
+
+
+.flota article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.flota{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: var(--margin-top);
     text-align: center;
-    
-}
-
-.nuestra_flota .flota img{
-    width: 100% ;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.374); 
-    margin-bottom: 10px;
-}
-
-.flota article{
     border: 2px solid var(--color-titulo);
-    height: 500px;
     border-radius: 20px;
-    width: 350px;
+    padding: 12px;
     background-color: var(--color-titulo);
     color: white;
-    align-items: center;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
-.flota article button a{
+
+.flota article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.374);
+}
+
+
+.flota article h3 {
+    margin: 8px 0;
+}
+
+
+.flota article p {
+    margin: 4px 0;
+    color: white;
+}
+
+
+.flota article button {
+    background-color: var(--color-fondo);
+    border: none;
+    height: 50px;
+    margin-top: auto;
+    padding: 0 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.flota article button a {
     text-decoration: none;
     color: var(--color-boton-secundary);
 }
 
-.flota article button a:hover{
+
+.flota article .btn-reservar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 15px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color: var(--color-fondo);
+    color: var(--color-boton-secundary);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.flota article button:hover,
+.flota article .btn-reservar:hover {
+    background-color: var(--color-boton-secundary);
+}
+
+.flota article button a:hover,
+.flota article .btn-reservar:hover {
+    color: white;
+}
+
+.nuestras_rutas {
+    margin: 20px;
+    padding: var(--padding);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.descripcion_rutas {
+    margin: 15px 0;
+    color: var(--color-texto-secundary);
+}
+
+.galeria_rutas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.tarjeta_ruta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--color-titulo);
+    color: white;
+}
+
+.tarjeta_ruta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.tarjeta_ruta h3 {
+    color: var(--color-boton-secundary);
+}
+
+.tarjeta_ruta p {
+    color: white;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 800px) {
+    .galeria_rutas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
+    .galeria_rutas {
+        grid-template-columns: 1fr;
+    }
+    .Titulo_principal {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.reservas_contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin: 20px;
+    align-items: start;
+}
+
+
+.reservas_contenedor .formulario_reservas {
+    margin: 0;
+    min-width: 0;
+}
+
+.reservas_contenedor .reservas_contacto {
+    margin: 0;
+    min-width: 0;
+}
+
+@media (max-width: 800px) {
+    .reservas_contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.formulario_reservas .datos_personales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    padding: 20px;
+}
+
+.datos_personales .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.datos_personales .campo-completo {
+    grid-column: 1 / -1;
+}
+
+.datos_personales .campo label {
+    font-family: var(--fuente-secundary);
     color: var(--color-boton-enlaces);
 }
 
-.flota article button{
-    background-color: var(--color-fondo);
+.datos_personales .campo input {
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 8px;
     border: none;
-    height: 50px;
-    margin-top: var(--margin-top);
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.datos_personales .campo input:focus {
+    outline: 2px solid var(--color-boton-secundary);
+}
+
+@media (max-width: 550px) {
+    .formulario_reservas .datos_personales {
+        grid-template-columns: 1fr;
+    }
+    .datos_personales .campo-completo {
+        grid-column: auto;
+    }
 }
